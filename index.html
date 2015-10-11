@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Text  Editor With Audio Output</title>
+        <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
+    </head>
+    <body>
+        <h4>
+            For the best experience: go offline on chrome for OS X
+        </h4>
+        <p>
+                If you are online, chrome uses google for speach synthesis.
+            Not only their default settings (voice, language) are weird,
+            but it also causes a noticable delay.
+        </p>
+        <h4>
+            How to use
+        </h4>
+        <dl>
+            <dt><strong>Insert mode <small>(on by default)</small></strong></dt>
+            <dd></dd>
+            <dt>escape</dt>
+            <dd>activate normal mode</dd>
+            <dt>space</dt>
+            <dd>space and say last word</dd>
+            <dt>delete</dt>
+            <dd>delete last word</dd>
+            <dt>other characters</dt>
+            <dd>should work as expected</dd>
+        </dl>
+        <dl>
+            <dt><strong>Normal mode</strong></dt>
+            <dd></dd>
+            <dt>i</dt>
+            <dd>activate insert mode</dd>
+            <dt>l</dt>
+            <dd>say entire text</dd>
+            <dt>delete</dt>
+            <dd>works in this mode too</dd>
+            <dt>r</dt>
+            <dd>evaluates as javascript</dd>
+        </dl>
+        <h4>Tips</h4>
+        <ul>
+            <li>Reload the page to start from scratch</li>
+            <li><code>text</code> is a global variable</li>
+            <li>Script itself is <100 lines</li>
+            <li><strong>Mappings</strong> for silent characters
+                <details>
+                    <dl id="mappings"></dl>
+                </details>
+            </li>
+        </ul>
+        <h4>
+            Examples <small>(for you to start typing)</small>
+        </h4>
+        <h5>Calculate 4</h5>
+        <ul>
+            <li>
+                <code>2 plus 2 </code> <small>you should hear words as you type</small>
+            </li>
+            <li>
+                <em>escape</em> <small>to activate normal mode</small>
+            </li>
+            <li>
+                <em>r</em> <small>to evaluate as javascript expression</small>
+            </li>
+        </ul>
+
+        <h5>Factorial of 4</h5>
+        <ul>
+            <li>
+                <pre>
+function factorial of x does
+    if x is 0 then
+        return 1
+    else
+        return x times factorial of x minus 1 invocation
+    end
+end
+factorial of 4 invocation
+                </pre><small>you should hear words as you type</small>
+            </li>
+            <li>
+                <em>escape</em> <small>to activate normal mode</small>
+            </li>
+            <li>
+                <em>r</em> <small>to evaluate as javascript expression</small>
+            </li>
+        </ul>
+
+        <script src="main.js" charset="utf-8"></script>
+    </body>
+</html>

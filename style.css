@@ -1,0 +1,49 @@
+html {
+    background: whitesmoke;
+}
+
+body {
+    max-width: 600px;
+    margin: 32px auto;
+    font-family: helvetica, monospace;
+    background: white;
+    box-shadow: 0 0 1em gray;
+    border-radius: 2px;
+}
+
+body > * {
+    padding: 0 30px;
+}
+
+h4 {
+    background: skyblue;
+    font-size: 18px;
+    margin: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+dt {
+    font-style: oblique;
+}
+
+dl {
+    display: inline-block;
+    width: 39%;
+}
+
+details:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+code, pre {
+    background: aliceblue;
+    border: 1px solid lightsteelblue;
+    padding: 2px 8px;
+    border-radius: 2px;
+}
